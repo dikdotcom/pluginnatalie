@@ -1,0 +1,230 @@
+/**
+ * Admin styles for Natalie Auto Poster
+ */
+
+/* Wrap */
+.nap-wrap {
+    max-width: 1200px;
+}
+
+/* Stats Grid */
+.nap-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin: 20px 0;
+}
+
+.nap-stat-card {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.nap-stat-card.nap-stat-success { border-top: 4px solid #00a32a; }
+.nap-stat-card.nap-stat-warning { border-top: 4px solid #dba617; }
+.nap-stat-card.nap-stat-error   { border-top: 4px solid #d63638; }
+
+.nap-stat-number {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1d2327;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.nap-stat-label {
+    font-size: 13px;
+    color: #646970;
+}
+
+/* Dashboard Grid */
+.nap-dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Cards */
+.nap-card {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.nap-card h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.nap-card-full {
+    grid-column: 1 / -1;
+}
+
+/* Action Groups */
+.nap-action-group {
+    margin-bottom: 20px;
+}
+
+.nap-action-group h3 {
+    margin-top: 0;
+    font-size: 14px;
+    color: #1d2327;
+}
+
+/* Info Table */
+.nap-info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nap-info-table th,
+.nap-info-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #f0f0f1;
+    text-align: left;
+    font-size: 13px;
+}
+
+.nap-info-table th {
+    width: 40%;
+    color: #646970;
+    font-weight: 600;
+}
+
+/* Badges */
+.nap-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.nap-badge-success { background: #d1e7dd; color: #0a3622; }
+.nap-badge-error   { background: #f8d7da; color: #58151c; }
+.nap-badge-warning { background: #fff3cd; color: #664d03; }
+.nap-badge-info    { background: #cff4fc; color: #055160; }
+
+/* Status Message */
+.nap-status-message {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+.nap-status-message.success { color: #00a32a; }
+.nap-status-message.error   { color: #d63638; }
+
+/* Empty State */
+.nap-empty-state {
+    text-align: center;
+    padding: 40px;
+    color: #646970;
+    font-style: italic;
+}
+
+/* Error Text */
+.nap-error-text {
+    color: #d63638;
+}
+
+/* Settings Sections */
+.nap-settings-section {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.nap-settings-section h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.nap-settings-section h3 {
+    color: #1d2327;
+    font-size: 14px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #f0f0f1;
+}
+
+/* Provider Settings - show/hide based on selection */
+.nap-provider-settings,
+.nap-storage-settings {
+    display: none;
+    margin-top: 10px;
+    padding: 15px;
+    background: #f6f7f7;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+}
+
+.nap-provider-settings.active,
+.nap-storage-settings.active {
+    display: block;
+}
+
+/* Test Result */
+.nap-test-result {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+.nap-test-result.success { color: #00a32a; }
+.nap-test-result.error   { color: #d63638; }
+
+/* Logs */
+.nap-log-filters {
+    margin-bottom: 15px;
+}
+
+.nap-log-filters .button {
+    margin-right: 5px;
+}
+
+.nap-logs-table pre {
+    font-size: 11px;
+    background: #f6f7f7;
+    padding: 8px;
+    border-radius: 3px;
+    overflow: auto;
+    max-height: 150px;
+    margin: 5px 0 0;
+}
+
+.nap-logs-table details summary {
+    cursor: pointer;
+    color: #2271b1;
+    font-size: 12px;
+}
+
+.nap-log-error td { background-color: #fff5f5 !important; }
+.nap-log-warning td { background-color: #fffbf0 !important; }
+
+/* Responsive */
+@media (max-width: 782px) {
+    .nap-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nap-dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
